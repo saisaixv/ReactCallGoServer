@@ -1,0 +1,7 @@
+.template{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    overflow:auto;
+}
