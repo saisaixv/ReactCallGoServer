@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {BrowserRouter,HashRouter, Route, Switch} from 'react-router-dom'
 
 import About from './About'
 import Users from './users/Users'
@@ -17,7 +17,7 @@ class Home extends Component {
     render() {
 
         return (
-            <BrowserRouter>
+            <HashRouter>
                 <div style={{height:"100%",width:"100%",paddingTop:20,paddingLeft:20,paddingRight:20,backgroundColor:"#f3f7ff"}}>
                     <Switch>
                         <Route path="/" exact component={Main}/>
@@ -30,7 +30,7 @@ class Home extends Component {
                         <Route path="/test" component={Test}/>
                     </Switch>
                 </div>
-            </BrowserRouter>
+            </HashRouter>
         )
 
         // return (

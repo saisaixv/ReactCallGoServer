@@ -222,7 +222,7 @@ class UsersScreen extends Component {
         }
 
         fetchUtils.setHeader(header)
-        fetchUtils.setServer("localhost:8080")
+        fetchUtils.setServer("192.168.150.130:8081")
         var params
         if (this.userState === "all") {
 
@@ -245,7 +245,7 @@ class UsersScreen extends Component {
     }
 
     callback(json) {
-        var data = this.state.data
+        var data = []
         var showData = this.showData
 
         if (json.error_code !== 0) {

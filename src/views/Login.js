@@ -51,7 +51,7 @@ export default class Login extends Component {
         this.errorcallback = this.errorcallback.bind(this)
         this.onRegisterClick = this.onRegisterClick.bind(this)
 
-        fetchUtils.setServer("localhost:8080")
+        fetchUtils.setServer("192.168.150.130:8081")
         var header = {
             "x-us-authtype": 1,
             "time-zone": -8,
