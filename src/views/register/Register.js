@@ -298,7 +298,6 @@ export default class Register extends Component {
     }
 
     registerClick(info) {
-        message.success("注册成功")
         console.log(`${info}`)
 
         this.userInfo["nickname"]=info.username
@@ -315,6 +314,7 @@ export default class Register extends Component {
             message.error("注册失败")
             return
         }
+        message.success("注册成功")
         this.setState({
             current: this.state.current + 1
         })
